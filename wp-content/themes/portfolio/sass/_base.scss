@@ -1,0 +1,57 @@
+// TYPOGRAPHY
+$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$secondary-font-family: 'Montserrat', sans-serif;
+$base-font-size: 14px;
+$bold: 700;
+$normal: 400;
+$light: 300;
+
+// BOX SHADOW
+$default-box-shadow-blur: 15px;
+$default-box-shadow-color: #999;
+
+// SOCIAL
+$facebook-color: #3b5998;
+$twitter-color: #0084b4;
+$instagram-color: #517fa4;
+$linkedin-color: #0077b5;
+$googleplus-color: #d8463b;
+
+// COLORS
+
+
+// LINKS
+$base-link-color: #23527c;
+
+// Z INDEX
+$base: 1;
+$high: 9;
+$highest: 999;
+
+// BODY
+body { background: #000; color: #ccc; font-family: $base-font-family; font-size: $base-font-size; overflow-x: hidden; }
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6 { font-family: $secondary-font-family; }
+h1 { font-size: 2em; margin: 20px 0; }
+h2 { font-size: 1.835em; margin: 15px 0; }
+h3 { font-size: 1.67em; margin: 10px 0; }
+h4 { font-size: 1.5em; margin: 10px 0; }
+h5 { font-size: 1.33em; margin: 10px 0; }
+h6 { font-size: 1.165em; margin: 10px 0; }
+
+p { padding-bottom: 10px; line-height: 1.33em; font-weight: $light; }
+
+// IMG
+img { display: block; width: 100%; height: auto; }
+
+// LINKS
+a { text-decoration: none; color: $base-link-color; }
+a:hover { text-decoration: underline; }
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}

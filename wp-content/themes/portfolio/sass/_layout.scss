@@ -1,0 +1,61 @@
+// MAIN HEADING
+section.banner-main { @include content(); width: 100%; }
+section.banner-main video { @include content(); width: 100%; height: auto; margin: 0; padding: 0; }
+section.banner-main button#play-pause-banner { position: absolute; z-index: $high; right: 30px; bottom: 20px; }
+
+// MAIN NAV
+nav.main { @include content(); top: 150px; position: absolute; z-index: $high; 
+	@include breakpoint(xxl) { top: 75px; }
+}
+nav.main li { padding: 27px 0 40px 0; display: block;
+	@include breakpoint (xxl) {  padding: 17px 0 30px 0; }
+}
+nav.main a { width: auto; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 15px 50px 15px 70px;  font-size: 3em; font-family: $secondary-font-family; border-left: 0px solid transparent; @include transition(.5s);
+	@include breakpoint(xxl) { font-size: 2.5em; padding: 10px 50px 10px 70px; } 
+	&:hover { padding-left: 100px; text-decoration: none; border-left: 10px solid #000; }
+	&:focus { text-decoration: none; }
+}
+
+// HOME SECTIONS
+#section-1, #section-2, #section-3 { @include content(); width: 100%; }
+#section-3, { background: #eee; }
+
+
+// ABOUT
+.about-content { color: #ccc; padding: 100px 20% 200px 20%; font-size: 1.33em; text-align: center; 
+	h1 { color: #ccc; }
+}
+
+// WEB
+.web-content { padding: 100px 0; color: #333; }
+.web-img { padding: 40px; }
+.web-text { padding: 50px 40px; font-size: 1.5em; }
+
+// FILM POSTS
+.film-content { max-width: 2000px; }
+.post-film { @include content();  overflow: hidden; }
+.post-film .overlay-dark { @include opacity(0); @include transition(.5s); z-index: $high;
+	.overlay-content { @include vertical-align(); text-align: center; margin-top: 50px; @include transition(.5s); @include opacity(0); }
+	&:hover { @include opacity(1); }
+	&:hover .overlay-content { margin: 0; @include opacity(1); }
+}
+.post-film img { @include transition(.25s); }
+.post-film:hover img { @include transform-scale(1.1); }
+.post-film h2 { margin: 0 0 15px 0; font-size: 2em;
+	@include breakpoint (xxl) { font-size: 1.5em; }
+}
+.post-film a { display: block; position: absolute; width: 100%; height: 100%; color: #ccc; margin: 0; padding: 0; &:hover, &:focus { text-decoration: none; } }
+.post-film .play-btn { @include triangle(15px,right,white); }
+
+
+// FOOTER
+.footer-video { @include content(); width: 100%; }
+.footer-video video { width: 100%; height: auto; display: block; }
+.footer-video button#play-pause-footer { position: absolute; z-index: $high; right: 30px; bottom: 20px; }
+footer.main { @include content(); width: 100%; background: #111; text-align: center; padding: 50px 0 20px 0; }
+.footer-heading { letter-spacing: 3px; font-size: 1em; }
+.footer-content { font-size: .9em; line-height: 1.5em; }
+footer.main h3 {  }
+footer.main a { color: #aaa; }
+.footer-locations { padding: 150px 0 0 0; text-transform: uppercase; font-size: .66em; letter-spacing: 5px; }
+.footer-copyright { @include content; width: 100%; background: #000; color: #666; font-size: .8em; padding: 10px 0; text-align: center; a { color: #999; }}

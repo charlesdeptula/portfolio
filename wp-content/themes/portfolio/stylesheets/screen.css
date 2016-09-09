@@ -1,0 +1,661 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 32, ../sass/_base.scss */
+body {
+  background: #000;
+  color: #ccc;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+/* line 35, ../sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 36, ../sass/_base.scss */
+h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+/* line 37, ../sass/_base.scss */
+h2 {
+  font-size: 1.835em;
+  margin: 15px 0;
+}
+
+/* line 38, ../sass/_base.scss */
+h3 {
+  font-size: 1.67em;
+  margin: 10px 0;
+}
+
+/* line 39, ../sass/_base.scss */
+h4 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* line 40, ../sass/_base.scss */
+h5 {
+  font-size: 1.33em;
+  margin: 10px 0;
+}
+
+/* line 41, ../sass/_base.scss */
+h6 {
+  font-size: 1.165em;
+  margin: 10px 0;
+}
+
+/* line 43, ../sass/_base.scss */
+p {
+  padding-bottom: 10px;
+  line-height: 1.33em;
+  font-weight: 300;
+}
+
+/* line 46, ../sass/_base.scss */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 49, ../sass/_base.scss */
+a {
+  text-decoration: none;
+  color: #23527c;
+}
+
+/* line 50, ../sass/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 52, ../sass/_base.scss */
+::selection {
+  background: #ffb7b7;
+  /* WebKit/Blink Browsers */
+}
+
+/* line 55, ../sass/_base.scss */
+::-moz-selection {
+  background: #ffb7b7;
+  /* Gecko Browsers */
+}
+
+/* line 2, ../sass/_global.scss */
+.block-center {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 3, ../sass/_global.scss */
+.fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+/* line 4, ../sass/_global.scss */
+.line {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: white;
+  margin: 30px auto;
+}
+
+/* line 5, ../sass/_global.scss */
+.width-sm {
+  max-width: 768px;
+}
+
+/* line 6, ../sass/_global.scss */
+.width-md {
+  max-width: 1024px;
+}
+
+/* line 7, ../sass/_global.scss */
+.width-xl {
+  max-width: 1440px;
+}
+
+/* line 8, ../sass/_global.scss */
+.width-xxl {
+  max-width: 2000px;
+}
+
+/* line 11, ../sass/_global.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 12, ../sass/_global.scss */
+.text-xl {
+  font-size: 1.5em;
+}
+
+/* line 13, ../sass/_global.scss */
+.text-white {
+  color: white;
+}
+
+/* line 14, ../sass/_global.scss */
+.text-grey {
+  color: #666;
+}
+
+/* line 15, ../sass/_global.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 19, ../sass/_global.scss */
+.no-gutter [class*="col"] {
+  padding: 0;
+}
+@media (min-width: 2000px) {
+  /* line 19, ../sass/_global.scss */
+  .no-gutter [class*="col"] {
+    padding: 20px;
+  }
+}
+
+/* line 24, ../sass/_global.scss */
+.overlay-dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+/* line 27, ../sass/_global.scss */
+a button.main {
+  color: #333;
+  font-size: .66em;
+  letter-spacing: 1.5px;
+}
+
+/* line 28, ../sass/_global.scss */
+button.main {
+  background: transparent;
+  border: 3px solid #333;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 40px 0;
+  background: transparent;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+/* line 29, ../sass/_global.scss */
+button.main:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 31, ../sass/_global.scss */
+button.play-pause {
+  background: url(../img/sprite-playPause-white.png);
+  background-size: 95%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0.5;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+/* line 32, ../sass/_global.scss */
+button.play-pause:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 1;
+}
+/* line 33, ../sass/_global.scss */
+button.play-pause:focus {
+  outline: none;
+}
+
+/* line 35, ../sass/_global.scss */
+button.play-pause.is-playing {
+  background-position: top;
+}
+
+/* line 36, ../sass/_global.scss */
+button.play-pause.is-paused {
+  background-position: bottom;
+}
+
+/* line 39, ../sass/_global.scss */
+.arrow {
+  width: 50px;
+  height: 50px;
+  padding: 48px 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0.5;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+/* line 40, ../sass/_global.scss */
+.arrow:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 1;
+}
+
+/* line 42, ../sass/_global.scss */
+.arrow-down {
+  background: url(../img/arrow-down.png) no-repeat center;
+  background-size: 100%;
+}
+
+/* line 45, ../sass/_global.scss */
+.fade-out {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 45, ../sass/_global.scss */
+.fade-out:hover {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0;
+}
+
+/* line 2, ../sass/_layout.scss */
+section.banner-main {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* line 3, ../sass/_layout.scss */
+section.banner-main video {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 4, ../sass/_layout.scss */
+section.banner-main button#play-pause-banner {
+  position: absolute;
+  z-index: 9;
+  right: 30px;
+  bottom: 20px;
+}
+
+/* line 7, ../sass/_layout.scss */
+nav.main {
+  position: relative;
+  display: block;
+  top: 150px;
+  position: absolute;
+  z-index: 9;
+}
+@media (max-width: 1600px) {
+  /* line 7, ../sass/_layout.scss */
+  nav.main {
+    top: 75px;
+  }
+}
+
+/* line 10, ../sass/_layout.scss */
+nav.main li {
+  padding: 27px 0 40px 0;
+  display: block;
+}
+@media (max-width: 1600px) {
+  /* line 10, ../sass/_layout.scss */
+  nav.main li {
+    padding: 17px 0 30px 0;
+  }
+}
+
+/* line 13, ../sass/_layout.scss */
+nav.main a {
+  width: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 50px 15px 70px;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  border-left: 0px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 1600px) {
+  /* line 13, ../sass/_layout.scss */
+  nav.main a {
+    font-size: 2.5em;
+    padding: 10px 50px 10px 70px;
+  }
+}
+/* line 15, ../sass/_layout.scss */
+nav.main a:hover {
+  padding-left: 100px;
+  text-decoration: none;
+  border-left: 10px solid #000;
+}
+/* line 16, ../sass/_layout.scss */
+nav.main a:focus {
+  text-decoration: none;
+}
+
+/* line 20, ../sass/_layout.scss */
+#section-1, #section-2, #section-3 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* line 21, ../sass/_layout.scss */
+#section-3 {
+  background: #eee;
+}
+
+/* line 25, ../sass/_layout.scss */
+.about-content {
+  color: #ccc;
+  padding: 100px 20% 200px 20%;
+  font-size: 1.33em;
+  text-align: center;
+}
+/* line 26, ../sass/_layout.scss */
+.about-content h1 {
+  color: #ccc;
+}
+
+/* line 30, ../sass/_layout.scss */
+.web-content {
+  padding: 100px 0;
+  color: #333;
+}
+
+/* line 31, ../sass/_layout.scss */
+.web-img {
+  padding: 40px;
+}
+
+/* line 32, ../sass/_layout.scss */
+.web-text {
+  padding: 50px 40px;
+  font-size: 1.5em;
+}
+
+/* line 35, ../sass/_layout.scss */
+.film-content {
+  max-width: 2000px;
+}
+
+/* line 36, ../sass/_layout.scss */
+.post-film {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 37, ../sass/_layout.scss */
+.post-film .overlay-dark {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 9;
+}
+/* line 38, ../sass/_layout.scss */
+.post-film .overlay-dark .overlay-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  margin-top: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0;
+}
+/* line 39, ../sass/_layout.scss */
+.post-film .overlay-dark:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 1;
+}
+/* line 40, ../sass/_layout.scss */
+.post-film .overlay-dark:hover .overlay-content {
+  margin: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 1;
+}
+
+/* line 42, ../sass/_layout.scss */
+.post-film img {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 43, ../sass/_layout.scss */
+.post-film:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 44, ../sass/_layout.scss */
+.post-film h2 {
+  margin: 0 0 15px 0;
+  font-size: 2em;
+}
+@media (max-width: 1600px) {
+  /* line 44, ../sass/_layout.scss */
+  .post-film h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* line 47, ../sass/_layout.scss */
+.post-film a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+/* line 47, ../sass/_layout.scss */
+.post-film a:hover, .post-film a:focus {
+  text-decoration: none;
+}
+
+/* line 48, ../sass/_layout.scss */
+.post-film .play-btn {
+  width: 0;
+  height: 0;
+  border-left: 15px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+/* line 52, ../sass/_layout.scss */
+.footer-video {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* line 53, ../sass/_layout.scss */
+.footer-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 54, ../sass/_layout.scss */
+.footer-video button#play-pause-footer {
+  position: absolute;
+  z-index: 9;
+  right: 30px;
+  bottom: 20px;
+}
+
+/* line 55, ../sass/_layout.scss */
+footer.main {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #111;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+/* line 56, ../sass/_layout.scss */
+.footer-heading {
+  letter-spacing: 3px;
+  font-size: 1em;
+}
+
+/* line 57, ../sass/_layout.scss */
+.footer-content {
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+/* line 59, ../sass/_layout.scss */
+footer.main a {
+  color: #aaa;
+}
+
+/* line 60, ../sass/_layout.scss */
+.footer-locations {
+  padding: 150px 0 0 0;
+  text-transform: uppercase;
+  font-size: .66em;
+  letter-spacing: 5px;
+}
+
+/* line 61, ../sass/_layout.scss */
+.footer-copyright {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #000;
+  color: #666;
+  font-size: .8em;
+  padding: 10px 0;
+  text-align: center;
+}
+/* line 61, ../sass/_layout.scss */
+.footer-copyright a {
+  color: #999;
+}
