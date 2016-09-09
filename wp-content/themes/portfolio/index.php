@@ -24,7 +24,7 @@
 		<div class="about-content">
 			<h1>Hello</h1>
 			<div class="line block-center"></div>
-			<p>Here you will find my portfolio work, as well as some fun projects I have done on my spare time. This website is entirely custom built and all content is original. Enjoy!</p>
+			<p>Welcome to Charles Deptula . com. Here you will find my portfolio work, as well as some fun projects I have done on my spare time. This website is entirely custom built and all content is original. Enjoy!</p>
 			<div class="line block-center"></div>
 		</div>
 	</div>
