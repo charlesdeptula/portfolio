@@ -58,7 +58,7 @@
 						<div class="col-sm-6">
 							<div class="web-text">
 								<h3 class="web-title">Elephas Creative</h3>
-								<p class="web-description">Portfolio site for Elephas Creative located outside of Boston MA. Site contains a dynamic home page that randomly selects a series of background images to display from a database the user creates. Site also has an interactive map on the contact page/</p>
+								<p class="web-description">Portfolio site for Elephas Creative located outside of Boston MA. Site contains a dynamic home page that randomly selects a series of background images to display from a database the user creates. Site also has an interactive map on the contact page.</p>
 								<a href="http://elephascreative.com" target="_blank">
 									<button class="main">Visit Site</button>
 								</a>
