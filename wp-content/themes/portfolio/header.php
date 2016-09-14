@@ -2,7 +2,9 @@
 <html>
 <head>
 
-<title>Charles Deptula . com | Aspen Denver Colorado Boston Massachusetts New York Portland Oregon Film Production Filmer Video Editing Videography Web Development Graphic Design Branding Media Photography Photographer Timelapse Time-lapse Photographer</title>
+<title>Charles Deptula . com | Aspen Denver Colorado Boston Massachusetts New York Portland Oregon Film Production Filmer Video Editing Videography Web Development Mobile Graphic Design Branding Media Photography Photographer Timelapse Time-lapse Photographer</title>
+
+<meta name="viewport" content="width=device-width">
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 

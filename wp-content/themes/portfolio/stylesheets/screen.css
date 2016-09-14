@@ -67,7 +67,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 32, ../sass/_base.scss */
+@-ms-viewport {
+  width: device-width;
+}
+/* line 38, ../sass/_base.scss */
 body {
   background: #000;
   color: #ccc;
@@ -76,79 +79,79 @@ body {
   overflow-x: hidden;
 }
 
-/* line 35, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 36, ../sass/_base.scss */
+/* line 42, ../sass/_base.scss */
 h1 {
   font-size: 2em;
   margin: 20px 0;
 }
 
-/* line 37, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 h2 {
   font-size: 1.835em;
   margin: 15px 0;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
 h3 {
   font-size: 1.67em;
   margin: 10px 0;
 }
 
-/* line 39, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 h4 {
   font-size: 1.5em;
   margin: 10px 0;
 }
 
-/* line 40, ../sass/_base.scss */
+/* line 46, ../sass/_base.scss */
 h5 {
   font-size: 1.33em;
   margin: 10px 0;
 }
 
-/* line 41, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 h6 {
   font-size: 1.165em;
   margin: 10px 0;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 p {
   padding-bottom: 10px;
   line-height: 1.33em;
   font-weight: 300;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #23527c;
 }
 
-/* line 50, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 58, ../sass/_base.scss */
 ::selection {
   background: #ffb7b7;
   /* WebKit/Blink Browsers */
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 ::-moz-selection {
   background: #ffb7b7;
   /* Gecko Browsers */

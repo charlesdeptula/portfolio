@@ -28,6 +28,12 @@ $base: 1;
 $high: 9;
 $highest: 999;
 
+
+// MOBILE
+@-ms-viewport {
+  width: device-width;
+}
+
 // BODY
 body { background: #000; color: #ccc; font-family: $base-font-family; font-size: $base-font-size; overflow-x: hidden; }
 
