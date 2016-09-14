@@ -665,18 +665,13 @@ footer.main a {
 
 @media screen and (max-width: 768px) {
   /* line 7, ../sass/_mobile.scss */
-  .arrow-down {
-    display: none;
-  }
-
-  /* line 8, ../sass/_mobile.scss */
   a button.main {
     color: #333;
     font-size: 1em;
     letter-spacing: 1.5px;
   }
 
-  /* line 9, ../sass/_mobile.scss */
+  /* line 8, ../sass/_mobile.scss */
   button.main {
     padding: 20px;
     margin: 40px 0;
@@ -684,7 +679,7 @@ footer.main a {
     width: 100%;
   }
 
-  /* line 12, ../sass/_mobile.scss */
+  /* line 11, ../sass/_mobile.scss */
   .banner-main {
     height: 400px;
     background: url("../img/banner-main.jpg") no-repeat center center;
@@ -694,30 +689,30 @@ footer.main a {
     background-size: cover;
   }
 
-  /* line 13, ../sass/_mobile.scss */
+  /* line 12, ../sass/_mobile.scss */
   #banner-video {
     display: none;
   }
 
-  /* line 14, ../sass/_mobile.scss */
+  /* line 13, ../sass/_mobile.scss */
   #play-pause-banner {
     display: none;
   }
 
-  /* line 16, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   nav.main {
     width: 100%;
     top: 20px;
   }
 
-  /* line 17, ../sass/_mobile.scss */
+  /* line 16, ../sass/_mobile.scss */
   nav.main li {
     padding: 0 0 40px 0;
     display: block;
     text-align: center;
   }
 
-  /* line 18, ../sass/_mobile.scss */
+  /* line 17, ../sass/_mobile.scss */
   nav.main a {
     width: 200px;
     margin: 0 auto;
@@ -725,30 +720,30 @@ footer.main a {
     padding: 15px 50px;
     border-left: 0px;
   }
-  /* line 19, ../sass/_mobile.scss */
+  /* line 18, ../sass/_mobile.scss */
   nav.main a:hover {
     padding-left: 50px;
     text-decoration: none;
     border-left: 0;
   }
-  /* line 20, ../sass/_mobile.scss */
+  /* line 19, ../sass/_mobile.scss */
   nav.main a:focus {
     text-decoration: none;
   }
 
-  /* line 25, ../sass/_mobile.scss */
+  /* line 24, ../sass/_mobile.scss */
   .about-content {
     padding: 40px;
   }
 
-  /* line 28, ../sass/_mobile.scss */
+  /* line 27, ../sass/_mobile.scss */
   .post-film .overlay-dark {
     opacity: 1;
     filter: alpha(opacity=100);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
     -moz-opacity: 0 1;
   }
-  /* line 29, ../sass/_mobile.scss */
+  /* line 28, ../sass/_mobile.scss */
   .post-film .overlay-dark .overlay-content {
     margin: 0;
     opacity: 0.66;
@@ -757,24 +752,24 @@ footer.main a {
     -moz-opacity: 0 0.66;
   }
 
-  /* line 31, ../sass/_mobile.scss */
+  /* line 30, ../sass/_mobile.scss */
   .post-film h2 {
     font-size: 1.2em;
   }
 
-  /* line 34, ../sass/_mobile.scss */
+  /* line 33, ../sass/_mobile.scss */
   .web-content {
     padding: 10px 0;
   }
 
-  /* line 35, ../sass/_mobile.scss */
+  /* line 34, ../sass/_mobile.scss */
   .web-text {
     padding: 5px 40px;
     font-size: 1.2em;
     text-align: center;
   }
 
-  /* line 38, ../sass/_mobile.scss */
+  /* line 37, ../sass/_mobile.scss */
   .footer-video {
     height: 200px;
     background: url("../img/img-meteors-stars.jpg") no-repeat center center;
@@ -784,28 +779,28 @@ footer.main a {
     background-size: cover;
   }
 
-  /* line 39, ../sass/_mobile.scss */
+  /* line 38, ../sass/_mobile.scss */
   .footer-video video {
     display: none;
   }
 
-  /* line 40, ../sass/_mobile.scss */
+  /* line 39, ../sass/_mobile.scss */
   .footer-video button#play-pause-footer {
     display: none;
   }
 
-  /* line 41, ../sass/_mobile.scss */
+  /* line 40, ../sass/_mobile.scss */
   .footer-content {
     font-size: 1.2em;
     line-height: 2em;
   }
 
-  /* line 42, ../sass/_mobile.scss */
+  /* line 41, ../sass/_mobile.scss */
   footer.main h3 {
     margin-top: 40px;
   }
 
-  /* line 43, ../sass/_mobile.scss */
+  /* line 42, ../sass/_mobile.scss */
   .footer-locations {
     padding: 40px 0 0 0;
     font-size: .5em;

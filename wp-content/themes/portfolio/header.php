@@ -16,8 +16,7 @@
 <link href="<?php bloginfo('stylesheet_directory'); ?>/stylesheets/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css" />
 
 <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Open+Sans:300,400|Futura:300,400" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
 <body>
