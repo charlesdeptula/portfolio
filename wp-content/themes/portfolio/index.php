@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<h1 class="hidden">Charles Deptula . com | Videographer Web Developer Filmmaker Designer Aspen Boston Denver New York Portland Oregon Massachusetts New England Colorado</h1>
 
 <section class="banner-main">
 	<video loop poster="<?php bloginfo('stylesheet_directory'); ?>/img/banner-main.jpg" id="banner-video">
@@ -52,7 +53,7 @@
 		<div class="row block-center width-sm footer-content">
 			<div class="col-sm-4">
 				<h3>Contact</h3>
-				<a href="mailto:charles.deptula@gmail.com" target="_blank">charles.deptula@gmail.com</a><br>
+				<a href="mailto:charles.deptula@gmail.com">charles.deptula@gmail.com</a><br>
 				617.833.5623
 			</div>
 			<div class="col-sm-4">

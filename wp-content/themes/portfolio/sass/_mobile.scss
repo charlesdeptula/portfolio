@@ -1,0 +1,45 @@
+// MOBILE TWEAKS
+
+
+@media screen and (max-width: 768px) {
+
+	// GLOBAL
+	.arrow-down { display: none; }
+	a button.main { color: #333; font-size: 1em; letter-spacing: 1.5px; }
+	button.main { padding: 20px; margin: 40px 0; font-size: 2em; width: 100%; }
+
+	// MAIN NAV
+	.banner-main { height: 400px; @include background-cover('../img/banner-main.jpg'); }
+	#banner-video { display: none; }
+	#play-pause-banner { display: none; }
+
+	nav.main { width: 100%; top: 20px; }
+	nav.main li { padding: 0 0 40px 0; display: block; text-align: center; }
+	nav.main a { width: 200px; margin: 0 auto; display: block; padding: 15px 50px; border-left: 0px;
+		&:hover { padding-left: 50px; text-decoration: none; border-left: 0; }
+		&:focus { text-decoration: none; }
+	}
+
+
+	// ABOUT
+	.about-content { padding: 40px; }
+
+	// FILM POSTS
+	.post-film .overlay-dark { @include opacity(1); 
+		.overlay-content { margin: 0; @include opacity(.66); }
+	}
+	.post-film h2 { font-size: 1.2em; }
+
+	// WEB
+	.web-content { padding: 10px 0; }
+	.web-text { padding: 5px 40px; font-size: 1.2em; text-align: center; }
+
+	// FOOTER
+	.footer-video { height: 200px; @include background-cover('../img/img-meteors-stars.jpg'); }
+	.footer-video video { display: none; }
+	.footer-video button#play-pause-footer { display: none; }
+	.footer-content { font-size: 1.2em; line-height: 2em; }
+	footer.main h3 { margin-top: 40px; }
+	.footer-locations { padding: 40px 0 0 0; font-size: .5em; }
+	
+}
