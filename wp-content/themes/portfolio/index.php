@@ -10,7 +10,7 @@
 		<source src="<?php bloginfo('stylesheet_directory'); ?>/media/starLapse.mp4" type="video/mp4" />
 	</video>
 	<button id="play-pause-banner" class="play-pause" type="button"></button>
-	<video controls poster="<?php bloginfo('stylesheet_directory'); ?>/img/banner-main.jpg" id="reel" class="nodisplay">
+	<video poster="<?php bloginfo('stylesheet_directory'); ?>/img/banner-main.jpg" id="reel" class="nodisplay">
 		<source src="<?php bloginfo('stylesheet_directory'); ?>/media/2016-demoReelWide.mp4" type="video/mp4" />
 	</video>
 	<nav class="main">
