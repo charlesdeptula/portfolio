@@ -65,6 +65,24 @@ $( document ).ready(function() {
 		}
 	});
 
+	// reel
+
+	$("#reel").on('ended', function() {
+		$('#reel').addClass('nodisplay');
+		$('#btn-reel').removeClass('nodisplay');
+		$('#play-pause-banner').removeClass('nodisplay');
+		$('nav.main').removeClass('nodisplay');
+	});
+
+
+	$('#btn-reel').click(function() {
+		$('#reel').removeClass('nodisplay');
+		$('#reel').get(0).play();
+		$('#btn-reel').addClass('nodisplay');
+		$('#play-pause-banner').addClass('nodisplay');
+		$('nav.main').addClass('nodisplay');
+	});
+
 	// load slider
 	$('.flexslider').flexslider({
 		animation: "slide",

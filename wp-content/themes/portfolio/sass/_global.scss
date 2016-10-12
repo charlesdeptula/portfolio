@@ -42,5 +42,8 @@ button.play-pause.is-paused { background-position: bottom; }
 }
 .arrow-down { background: url(../img/arrow-down.png) no-repeat center; background-size: 100%; }
 
-// EFFECTS
+// EFFECTS & STATES
 .fade-out { @include opacity(0); @include transition(.5s); &:hover { @include opacity(0); } }
+.invisible { @include opacity(0); }
+.nodisplay { display: none !important; }
+.hide-right { left: 100px; }
