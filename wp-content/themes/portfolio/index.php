@@ -3,9 +3,7 @@
 <h1 class="hidden">Charles Deptula . com | Videographer Web Developer Filmmaker Designer Aspen Boston Denver New York Portland Oregon Massachusetts New England Colorado</h1>
 
 <section class="banner-main">
-	<div class="btn-reel-container">
-		<button class="btn-reel">DEMO REEL</button>
-	</div>
+
 	<video loop poster="<?php bloginfo('stylesheet_directory'); ?>/img/banner-main.jpg" id="banner-video">
 		<source src="<?php bloginfo('stylesheet_directory'); ?>/media/starLapse.mp4" type="video/mp4" />
 	</video>
