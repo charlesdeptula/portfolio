@@ -1,10 +1,17 @@
 // MAIN HEADING
 section.banner-main { @include content(); width: 100%; }
 section.banner-main video { @include content(); width: 100%; height: auto; margin: 0; padding: 0; }
-section.banner-main button#play-pause-banner { position: absolute; z-index: $high; right: 30px; bottom: 20px; }
+section.banner-main button#play-pause-banner, button#play-pause-reel { position: absolute; z-index: $high; right: 30px; bottom: 20px; }
+button#play-pause-reel { z-index: $highest; background: white; }
+
+
+// reel
+video#reel { position: absolute; top: 0; right: 0; left: 0; height: auto; z-index: $higher; display: none; }
+.btn-reel-container { position: absolute; width: 100%; height: 100%; text-align: center; }
+button.btn-reel { display: inline; @include vertical-align(); z-index: $highest; }
 
 // MAIN NAV
-nav.main { @include content(); top: 150px; position: absolute; z-index: $high; 
+nav.main { @include content(); top: 150px; position: absolute; z-index: $highest; 
 	@include breakpoint(xxl) { top: 75px; }
 }
 nav.main li { padding: 27px 0 40px 0; display: block;
@@ -46,6 +53,8 @@ nav.main a { width: auto; color: white; background-color: rgba(0, 0, 0, 0.5); pa
 }
 .post-film a { display: block; position: absolute; width: 100%; height: 100%; color: #ccc; margin: 0; padding: 0; &:hover, &:focus { text-decoration: none; } }
 .post-film .play-btn { @include triangle(15px,right,white); }
+
+.reel { @include content(); width: 100%; height: auto; }
 
 
 // FOOTER

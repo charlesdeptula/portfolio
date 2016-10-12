@@ -2,6 +2,7 @@
 .block-center { @include content(); margin: 0 auto; }
 .fixed { position: fixed; z-index: $highest; }
 .line { @include content(); width: 40px; height: 1px; background: white; margin: 30px auto; }
+.vertical-align { @include vertical-align(); }
 .width-sm { max-width: 768px; }
 .width-md { max-width: 1024px; }
 .width-xl { max-width: 1440px; }
