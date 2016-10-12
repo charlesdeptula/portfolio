@@ -318,7 +318,34 @@ button.play-pause.is-paused {
   background-position: bottom;
 }
 
+/* line 39, ../sass/_global.scss */
+button.stop {
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: white;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 0.5;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
 /* line 40, ../sass/_global.scss */
+button.stop:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
+  -moz-opacity: 0 1;
+}
+/* line 41, ../sass/_global.scss */
+button.stop:focus {
+  outline: none;
+}
+
+/* line 45, ../sass/_global.scss */
 .arrow {
   width: 50px;
   height: 50px;
@@ -332,7 +359,7 @@ button.play-pause.is-paused {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 41, ../sass/_global.scss */
+/* line 46, ../sass/_global.scss */
 .arrow:hover {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -340,13 +367,13 @@ button.play-pause.is-paused {
   -moz-opacity: 0 1;
 }
 
-/* line 43, ../sass/_global.scss */
+/* line 48, ../sass/_global.scss */
 .arrow-down {
   background: url(../img/arrow-down.png) no-repeat center;
   background-size: 100%;
 }
 
-/* line 46, ../sass/_global.scss */
+/* line 51, ../sass/_global.scss */
 .fade-out {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -357,7 +384,7 @@ button.play-pause.is-paused {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 46, ../sass/_global.scss */
+/* line 51, ../sass/_global.scss */
 .fade-out:hover {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -365,7 +392,7 @@ button.play-pause.is-paused {
   -moz-opacity: 0 0;
 }
 
-/* line 47, ../sass/_global.scss */
+/* line 52, ../sass/_global.scss */
 .invisible {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -373,12 +400,12 @@ button.play-pause.is-paused {
   -moz-opacity: 0 0;
 }
 
-/* line 48, ../sass/_global.scss */
+/* line 53, ../sass/_global.scss */
 .nodisplay {
   display: none !important;
 }
 
-/* line 49, ../sass/_global.scss */
+/* line 54, ../sass/_global.scss */
 .hide-right {
   left: 100px;
 }
@@ -445,7 +472,15 @@ button.btn-reel {
   letter-spacing: 5px;
 }
 
-/* line 14, ../sass/_layout.scss */
+/* line 12, ../sass/_layout.scss */
+button#stop-reel {
+  position: absolute;
+  z-index: 999;
+  right: 33px;
+  bottom: 23px;
+}
+
+/* line 15, ../sass/_layout.scss */
 nav.main {
   position: relative;
   display: block;
@@ -454,25 +489,25 @@ nav.main {
   z-index: 999;
 }
 @media (max-width: 1600px) {
-  /* line 14, ../sass/_layout.scss */
+  /* line 15, ../sass/_layout.scss */
   nav.main {
     top: 75px;
   }
 }
 
-/* line 17, ../sass/_layout.scss */
+/* line 18, ../sass/_layout.scss */
 nav.main li {
   padding: 27px 0 40px 0;
   display: block;
 }
 @media (max-width: 1600px) {
-  /* line 17, ../sass/_layout.scss */
+  /* line 18, ../sass/_layout.scss */
   nav.main li {
     padding: 17px 0 30px 0;
   }
 }
 
-/* line 20, ../sass/_layout.scss */
+/* line 21, ../sass/_layout.scss */
 nav.main a {
   width: auto;
   color: white;
@@ -487,77 +522,77 @@ nav.main a {
   transition: all 0.5s ease-in-out;
 }
 @media (max-width: 1600px) {
-  /* line 20, ../sass/_layout.scss */
+  /* line 21, ../sass/_layout.scss */
   nav.main a {
     font-size: 2.5em;
     padding: 10px 50px 10px 70px;
   }
 }
-/* line 22, ../sass/_layout.scss */
+/* line 23, ../sass/_layout.scss */
 nav.main a:hover {
   padding-left: 100px;
   text-decoration: none;
   border-left: 10px solid #000;
 }
-/* line 23, ../sass/_layout.scss */
+/* line 24, ../sass/_layout.scss */
 nav.main a:focus {
   text-decoration: none;
 }
 
-/* line 27, ../sass/_layout.scss */
+/* line 28, ../sass/_layout.scss */
 #section-1, #section-2, #section-3 {
   position: relative;
   display: block;
   width: 100%;
 }
 
-/* line 28, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 #section-3 {
   background: #eee;
 }
 
-/* line 32, ../sass/_layout.scss */
+/* line 33, ../sass/_layout.scss */
 .about-content {
   color: #ccc;
   padding: 100px 20% 200px 20%;
   font-size: 1.33em;
   text-align: center;
 }
-/* line 33, ../sass/_layout.scss */
+/* line 34, ../sass/_layout.scss */
 .about-content h1 {
   color: #ccc;
 }
 
-/* line 37, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 .web-content {
   padding: 100px 0;
   color: #333;
 }
 
-/* line 38, ../sass/_layout.scss */
+/* line 39, ../sass/_layout.scss */
 .web-img {
   padding: 40px;
 }
 
-/* line 39, ../sass/_layout.scss */
+/* line 40, ../sass/_layout.scss */
 .web-text {
   padding: 50px 40px;
   font-size: 1.5em;
 }
 
-/* line 42, ../sass/_layout.scss */
+/* line 43, ../sass/_layout.scss */
 .film-content {
   max-width: 2000px;
 }
 
-/* line 43, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .post-film {
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-/* line 44, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
 .post-film .overlay-dark {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -569,7 +604,7 @@ nav.main a:focus {
   transition: all 0.5s ease-in-out;
   z-index: 9;
 }
-/* line 45, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
 .post-film .overlay-dark .overlay-content {
   position: relative;
   top: 50%;
@@ -587,14 +622,14 @@ nav.main a:focus {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
   -moz-opacity: 0 0;
 }
-/* line 46, ../sass/_layout.scss */
+/* line 47, ../sass/_layout.scss */
 .post-film .overlay-dark:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity-ie)";
   -moz-opacity: 0 1;
 }
-/* line 47, ../sass/_layout.scss */
+/* line 48, ../sass/_layout.scss */
 .post-film .overlay-dark:hover .overlay-content {
   margin: 0;
   opacity: 1;
@@ -603,7 +638,7 @@ nav.main a:focus {
   -moz-opacity: 0 1;
 }
 
-/* line 49, ../sass/_layout.scss */
+/* line 50, ../sass/_layout.scss */
 .post-film img {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -611,26 +646,26 @@ nav.main a:focus {
   transition: all 0.25s ease-in-out;
 }
 
-/* line 50, ../sass/_layout.scss */
+/* line 51, ../sass/_layout.scss */
 .post-film:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* line 51, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 .post-film h2 {
   margin: 0 0 15px 0;
   font-size: 2em;
 }
 @media (max-width: 1600px) {
-  /* line 51, ../sass/_layout.scss */
+  /* line 52, ../sass/_layout.scss */
   .post-film h2 {
     font-size: 1.5em;
   }
 }
 
-/* line 54, ../sass/_layout.scss */
+/* line 55, ../sass/_layout.scss */
 .post-film a {
   display: block;
   position: absolute;
@@ -640,12 +675,12 @@ nav.main a:focus {
   margin: 0;
   padding: 0;
 }
-/* line 54, ../sass/_layout.scss */
+/* line 55, ../sass/_layout.scss */
 .post-film a:hover, .post-film a:focus {
   text-decoration: none;
 }
 
-/* line 55, ../sass/_layout.scss */
+/* line 56, ../sass/_layout.scss */
 .post-film .play-btn {
   width: 0;
   height: 0;
@@ -654,14 +689,14 @@ nav.main a:focus {
   border-bottom: 15px solid transparent;
 }
 
-/* line 57, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .reel-container {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 58, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 .reel {
   position: relative;
   display: block;
@@ -674,21 +709,21 @@ nav.main a:focus {
   height: auto;
 }
 
-/* line 62, ../sass/_layout.scss */
+/* line 63, ../sass/_layout.scss */
 .footer-video {
   position: relative;
   display: block;
   width: 100%;
 }
 
-/* line 63, ../sass/_layout.scss */
+/* line 64, ../sass/_layout.scss */
 .footer-video video {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 64, ../sass/_layout.scss */
+/* line 65, ../sass/_layout.scss */
 .footer-video button#play-pause-footer {
   position: absolute;
   z-index: 9;
@@ -696,7 +731,7 @@ nav.main a:focus {
   bottom: 20px;
 }
 
-/* line 65, ../sass/_layout.scss */
+/* line 66, ../sass/_layout.scss */
 footer.main {
   position: relative;
   display: block;
@@ -706,24 +741,24 @@ footer.main {
   padding: 50px 0 20px 0;
 }
 
-/* line 66, ../sass/_layout.scss */
+/* line 67, ../sass/_layout.scss */
 .footer-heading {
   letter-spacing: 3px;
   font-size: 1em;
 }
 
-/* line 67, ../sass/_layout.scss */
+/* line 68, ../sass/_layout.scss */
 .footer-content {
   font-size: .9em;
   line-height: 1.5em;
 }
 
-/* line 69, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 footer.main a {
   color: #aaa;
 }
 
-/* line 70, ../sass/_layout.scss */
+/* line 71, ../sass/_layout.scss */
 .footer-locations {
   padding: 150px 0 0 0;
   text-transform: uppercase;
@@ -731,7 +766,7 @@ footer.main a {
   letter-spacing: 5px;
 }
 
-/* line 71, ../sass/_layout.scss */
+/* line 72, ../sass/_layout.scss */
 .footer-copyright {
   position: relative;
   display: block;
@@ -742,7 +777,7 @@ footer.main a {
   padding: 10px 0;
   text-align: center;
 }
-/* line 71, ../sass/_layout.scss */
+/* line 72, ../sass/_layout.scss */
 .footer-copyright a {
   color: #999;
 }

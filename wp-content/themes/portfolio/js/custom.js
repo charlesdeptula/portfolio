@@ -69,6 +69,18 @@ $( document ).ready(function() {
 
 	$("#reel").on('ended', function() {
 		$('#reel').addClass('nodisplay');
+		$('#stop-reel').addClass('nodisplay');
+		$('#btn-reel').removeClass('nodisplay');
+		$('#play-pause-banner').removeClass('nodisplay');
+		$('nav.main').removeClass('nodisplay');
+	});
+
+
+	$("#stop-reel").click(function() {
+		$('#reel').addClass('nodisplay');
+		$('#stop-reel').addClass('nodisplay');
+		$('#reel').get(0).pause();
+		$('#reel').get(0).currentTime = 0;
 		$('#btn-reel').removeClass('nodisplay');
 		$('#play-pause-banner').removeClass('nodisplay');
 		$('nav.main').removeClass('nodisplay');
@@ -77,6 +89,7 @@ $( document ).ready(function() {
 
 	$('#btn-reel').click(function() {
 		$('#reel').removeClass('nodisplay');
+		$('#stop-reel').removeClass('nodisplay');
 		$('#reel').get(0).play();
 		$('#btn-reel').addClass('nodisplay');
 		$('#play-pause-banner').addClass('nodisplay');
