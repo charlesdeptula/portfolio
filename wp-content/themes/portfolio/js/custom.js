@@ -15,10 +15,45 @@ $( document ).ready(function() {
 		}
 	});
 
+	// reel
+	function stopReel() {
+		$('#reel').addClass('nodisplay');
+		$('#stop-reel').addClass('nodisplay');
+		$('#reel').get(0).pause();
+		$('#reel').get(0).currentTime = 0;
+		$('#btn-reel').removeClass('nodisplay');
+		$('#play-pause-banner').removeClass('nodisplay');
+		$('nav.main').removeClass('nodisplay');
+	}
+
+	function startReel() {
+		$('#reel').removeClass('nodisplay');
+		$('#stop-reel').removeClass('nodisplay');
+		$('#reel').get(0).play();
+		$('#btn-reel').addClass('nodisplay');
+		$('#play-pause-banner').addClass('nodisplay');
+		$('nav.main').addClass('nodisplay');
+	}
+
+	$("#reel").on('ended', function() {
+		stopReel();
+	});
+
+
+	$("#stop-reel").click(function() {
+		stopReel();
+	});
+
+
+	$('#btn-reel').click(function() {
+		startReel();
+	});
+
 	//scrolling functions
 	$(document).scroll(function() {
 		if ($(document).scrollTop() >= 50 ) {
 			$('.arrow-down-main').addClass('fade-out');
+			stopReel();
 		}
 		else {
 			$('.arrow-down-main').removeClass('fade-out');
@@ -65,36 +100,6 @@ $( document ).ready(function() {
 		}
 	});
 
-	// reel
-
-	$("#reel").on('ended', function() {
-		$('#reel').addClass('nodisplay');
-		$('#stop-reel').addClass('nodisplay');
-		$('#btn-reel').removeClass('nodisplay');
-		$('#play-pause-banner').removeClass('nodisplay');
-		$('nav.main').removeClass('nodisplay');
-	});
-
-
-	$("#stop-reel").click(function() {
-		$('#reel').addClass('nodisplay');
-		$('#stop-reel').addClass('nodisplay');
-		$('#reel').get(0).pause();
-		$('#reel').get(0).currentTime = 0;
-		$('#btn-reel').removeClass('nodisplay');
-		$('#play-pause-banner').removeClass('nodisplay');
-		$('nav.main').removeClass('nodisplay');
-	});
-
-
-	$('#btn-reel').click(function() {
-		$('#reel').removeClass('nodisplay');
-		$('#stop-reel').removeClass('nodisplay');
-		$('#reel').get(0).play();
-		$('#btn-reel').addClass('nodisplay');
-		$('#play-pause-banner').addClass('nodisplay');
-		$('nav.main').addClass('nodisplay');
-	});
 
 	// load slider
 	$('.flexslider').flexslider({
