@@ -54,7 +54,8 @@ nav.main a { width: auto; color: white; background-color: rgba(0, 0, 0, 0.5); pa
 .post-film a { display: block; position: absolute; width: 100%; height: 100%; color: #ccc; margin: 0; padding: 0; &:hover, &:focus { text-decoration: none; } }
 .post-film .play-btn { @include triangle(15px,right,white); }
 
-.reel { @include content(); width: 100%; height: auto; }
+.reel-container { position: absolute; width: 100%; height: 100%; }
+.reel { @include content(); @include vertical-align(); width: 100%; height: auto; }
 
 
 // FOOTER
