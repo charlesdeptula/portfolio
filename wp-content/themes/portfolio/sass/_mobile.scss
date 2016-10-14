@@ -11,6 +11,7 @@
 	.banner-main { height: 400px; @include background-cover('../img/banner-main.jpg'); }
 	#banner-video { display: none; }
 	#play-pause-banner { display: none; }
+	#btn-reel, #stop-reel { display: none; }
 
 	nav.main { width: 100%; top: 20px; }
 	nav.main li { padding: 0 0 40px 0; display: block; text-align: center; }

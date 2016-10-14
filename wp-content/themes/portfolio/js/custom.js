@@ -38,13 +38,9 @@ $( document ).ready(function() {
 	$("#reel").on('ended', function() {
 		stopReel();
 	});
-
-
 	$("#stop-reel").click(function() {
 		stopReel();
 	});
-
-
 	$('#btn-reel').click(function() {
 		startReel();
 	});
